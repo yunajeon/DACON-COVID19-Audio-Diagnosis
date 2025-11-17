@@ -43,7 +43,7 @@ COVID-19 검출을 위한 표준 방법인 RT-PCR 검사는 비용이 많이 들
     * 'gender' 피처를 `OneHotEncoder`로 인코딩
 4.  **모델링 및 최적화:**
     * `train_test_split`을 사용해 학습(70%) / 검증(30%) 데이터 분리 (`random_state=1200`)
-    * [cite_start]`MLPClassifier` (다층 퍼셉트론) 모델을 선정 [cite: 211]
+    * `MLPClassifier` (다층 퍼셉트론) 모델을 선정 
     * `GridSearchCV`를 사용해 최적의 하이퍼파라미터 탐색 (`cv=5`, `scoring='f1_macro'`)
     * **최적 하이퍼파라미터:**
         * `activation`: 'relu'
